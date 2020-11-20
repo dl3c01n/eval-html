@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+#nav {
+    margin: 0px;
+    padding-left: 0px;
+    background-color: black;
+    list-style-type: none;
+    overflow: hidden;
+}
+#nav > li {
+    float: left;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+#nav > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#brand {
+    font-weight: bold;
+}
+
+.fond {
+    background: url('https://blog.bede.io/content/images/2019/03/Screenshot-2.png');
+    width: 100%;
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+  align-items: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.jumbotron {
+    margin-bottom: 0px;
+    color: white; /* Le texte sera affiché en blanc */
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background:transparent;
+}
+h1{
+    margin: 0px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+#separator {
+    background-color: black;
+    height: 30px;
+}
+
+#core {
+    display: flex;
+  }
+  #core > aside {
+    flex-grow: 3;
+    width: 25%;
+  }
+  #core > article {
+    flex-grow: 2;
+  }
+  
+#side > li{
+    list-style-type: none;
+    padding-top: 15px;
+}
+#side > li, a{
+    list-style-type: none;
+    color: dodgerblue
+}
+
+#side > li, a:hover{
+    list-style-type: none;
+    color: dodgerblue
+}
+
+#side > li, a:focus{
+    list-style-type: none;
+    color: dodgerblue
+}
+
+article > div{
+    margin-top: 50px;
+}
+
+footer {
+    font-family: 'Goldman', cursive;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: black;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f1f1f1; 
+      color: black !important;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  #modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  #close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #close:hover,
+  #close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
